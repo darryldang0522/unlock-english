@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> UNLOCK ENGLISH | Luyện thi DET, TOEIC & Tiếng Anh giao tiếp</title>
+  <meta name="description" content="Khóa học luyện thi DET, TOEIC và tiếng Anh giao tiếp online. Lộ trình rõ ràng, học linh hoạt, hỗ trợ sát sao.">
+
+  <!-- Font chữ Be Vietnam Pro (hỗ trợ tiếng Việt tốt) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Gắn file CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Đánh dấu "JavaScript đang chạy" để hiệu ứng chỉ bật khi script hoạt động -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Thanh tiến trình cuộn trang (chạy ngang trên cùng) -->
+  <div class="progress" id="progress"></div>
+
+  <!-- ===== THANH MENU ===== -->
+  <header class="header">
+      <div class="container header__inner">
+          <a href="#top" class="logo">UNLOCK<span>ENGLISH</span></a>
+          <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+          <nav class="nav" id="nav">
+              <a href="#khoa-hoc">Khóa học</a>
+              <a href="#uu-diem">Ưu điểm</a>
+              <a href="#lo-trinh">Lộ trình</a>
+              <a href="#goc-hoc-tap">Góc học tập</a>
+              <a href="#hoi-dap">Hỏi đáp</a>
+              <a href="gioi-thieu.html">Giới thiệu</a>
+              <a href="lien-he.html">Liên hệ</a>
+              <a href="#dang-ky" class="btn btn--small">Đăng ký tư vấn</a>
+          </nav>
+      </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== BANNER ĐẦU TRANG ===== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="badge">Học online • Linh hoạt • Có lộ trình</span>
+          <h1>Chinh phục <em>DET</em>, <em>TOEIC</em> và <em> Tiếng Anh giao tiếp</em></h1>
+          <p>Học đúng trọng tâm, luyện đề sát thực tế và được hướng dẫn từng bước để đạt mục tiêu của bạn: du học, xin việc, thăng tiến hay tự tin giao tiếp mỗi ngày.</p>
+          <div class="hero__actions">
+            <a href="#khoa-hoc" class="btn">Xem các khóa học</a>
+            <a href="#dang-ky" class="btn btn--outline">Nhận tư vấn miễn phí</a>
+          </div>
+        </div>
+        <div class="hero__card">
+          <h3>Bạn muốn học gì?</h3>
+          <ul>
+            <li><span>🎓</span> Luyện thi DET để du học, xét tuyển</li>
+            <li><span>💼</span> Luyện thi TOEIC để đi làm, thăng tiến</li>
+            <li><span>💬</span> Giao tiếp tự tin trong công việc, đời sống</li>
+          </ul>
+          <a href="#dang-ky" class="btn btn--full">Kiểm tra trình độ miễn phí</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3 KHÓA HỌC ===== -->
+    <section class="section" id="khoa-hoc">
+      <div class="container">
+        <div class="section__head">
+          <h2>Các khóa học của chúng tôi</h2>
+          <p>Chọn khóa học phù hợp với mục tiêu của bạn.</p>
+        </div>
+
+        <div class="grid grid--3">
+
+          <!-- Khóa DET -->
+          <article class="card card--orange">
+            <div class="card__icon">🎓</div>
+            <h3>Luyện thi DET</h3>
+            <p class="card__sub">Dành cho học sinh, sinh viên cần chứng chỉ để du học hoặc xét tuyển.</p>
+            <ul class="list">
+              <li>Làm quen định dạng bài thi thích ứng</li>
+              <li>Luyện 4 kỹ năng: Đọc, Nghe, Nói, Viết</li>
+              <li>Chiến lược làm từng dạng câu hỏi</li>
+              <li>Thi thử và nhận xét kết quả</li>
+            </ul>
+            <div class="card__meta">
+              <span>⏱ [Số buổi/tuần]</span>
+              <span>💰 [Học phí]</span>
+            </div>
+            <a href="det.html" class="btn btn--full">Xem chi tiết khóa DET</a>
+          </article>
+
+          <!-- Khóa TOEIC -->
+          <article class="card card--purple">
+            <div class="card__icon">💼</div>
+            <h3>Luyện thi TOEIC</h3>
+            <p class="card__sub">Dành cho sinh viên sắp tốt nghiệp và người đi làm cần chứng chỉ TOEIC.</p>
+            <ul class="list">
+              <li>Hệ thống từ vựng và ngữ pháp trọng tâm</li>
+              <li>Luyện Listening &amp; Reading theo từng Part</li>
+              <li>Mẹo xử lý bài thi trong thời gian giới hạn</li>
+              <li>Đề luyện tập sát cấu trúc thi thật</li>
+            </ul>
+            <div class="card__meta">
+              <span>⏱ [Số buổi/tuần]</span>
+              <span>💰 [Học phí]</span>
+            </div>
+            <a href="toeic.html" class="btn btn--purple btn--full">Xem chi tiết khóa TOEIC</a>
+          </article>
+
+          <!-- Khóa Giao tiếp -->
+          <article class="card card--orange">
+            <div class="card__icon">💬</div>
+            <h3>Tiếng Anh giao tiếp</h3>
+            <p class="card__sub">Dành cho người muốn nói tự nhiên, phản xạ nhanh trong công việc và đời sống.</p>
+            <ul class="list">
+              <li>Phát âm chuẩn, nghe hiểu người bản xứ</li>
+              <li>Mẫu câu theo tình huống thực tế</li>
+              <li>Thực hành nói cùng giáo viên</li>
+              <li>Xây dựng sự tự tin khi giao tiếp</li>
+            </ul>
+            <div class="card__meta">
+              <span>⏱ [Số buổi/tuần]</span>
+              <span>💰 [Học phí]</span>
+            </div>
+            <a href="giao-tiep.html" class="btn btn--full">Xem chi tiết khóa Giao tiếp</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ƯU ĐIỂM ===== -->
+    <section class="section section--tint" id="uu-diem">
+      <div class="container">
+        <div class="section__head">
+          <h2>Vì sao chọn chúng tôi?</h2>
+          <p>Học hiệu quả, có người đồng hành đến khi bạn đạt mục tiêu.</p>
+        </div>
+        <div class="grid grid--4">
+          <div class="feature">
+            <div class="feature__icon">🧭</div>
+            <h4>Lộ trình rõ ràng</h4>
+            <p>Mỗi khóa học được chia thành các giai đoạn với mục tiêu cụ thể.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">📱</div>
+            <h4>Học mọi lúc, mọi nơi</h4>
+            <p>Học trên điện thoại hoặc máy tính, chủ động thời gian của bạn.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">📝</div>
+            <h4>Luyện đề thực tế</h4>
+            <p>Bài tập và đề thi thử bám sát cấu trúc bài thi.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">🤝</div>
+            <h4>Hỗ trợ sát sao</h4>
+            <p>Giải đáp thắc mắc và theo dõi tiến độ học của từng học viên.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LỘ TRÌNH ===== -->
+    <section class="section" id="lo-trinh">
+      <div class="container">
+        <div class="section__head">
+          <h2>Lộ trình học tập</h2>
+          <p>4 bước đơn giản để bắt đầu.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h4>Kiểm tra trình độ</h4>
+            <p>Làm bài test đầu vào để biết điểm xuất phát.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h4>Chọn khóa học</h4>
+            <p>Được tư vấn khóa phù hợp với mục tiêu và thời gian.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h4>Học và luyện tập</h4>
+            <p>Học theo lộ trình, làm bài tập và thi thử định kỳ.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">4</div>
+            <h4>Đạt mục tiêu</h4>
+            <p>Tự tin bước vào kỳ thi hoặc ứng dụng vào công việc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GÓC HỌC TẬP (2 cột: DET | TOEIC) ===== -->
+    <section class="section study" id="goc-hoc-tap">
+      <span class="study__blob study__blob--1"></span>
+      <span class="study__blob study__blob--2"></span>
+
+      <div class="container">
+        <div class="section__head">
+          <h2>Góc học tập</h2>
+          <p>Học thử từ vựng, làm câu hỏi mẫu và nắm mẹo ôn tập cho từng kỳ thi.</p>
+        </div>
+
+        <div class="study__grid">
+
+          <!-- ============ CỘT DET ============ -->
+          <article class="study__col study__col--det">
+            <div class="study__head">
+              <div class="study__icon">🎓</div>
+              <div>
+                  <h3>Góc học DET</h3>
+                  <p>4 kỹ năng: Nghe – Nói - Đọc – Viết <br> Thi trên máy tính, câu hỏi thích ứng theo năng lực </br> </p>
+              </div>
+            </div>
+
+            <div class="study__body">
+              <div class="chips">
+                <div class="chip"><b><span class="count" data-target="160">160</span></b><small>điểm tối đa</small></div>
+                <div class="chip"><b><span class="count" data-target="13">13</span></b><small>dạng bài tập</small></div>
+                <div class="chip"><b>~90<small class="chip__unit">phút</small></b><small>thời lượng thi</small></div>
+              </div>
+
+              <h4 class="study__title">Từ vựng hôm nay <em>(bấm để lật thẻ)</em></h4>
+              <div class="flips">
+                <div class="flip" tabindex="0" role="button" aria-label="Lật thẻ từ vựng">
+                  <div class="flip__inner">
+                    <div class="flip__face flip__front"><span class="flip__word">Accomplish</span><span class="flip__type">Verb</span></div>
+                    <div class="flip__face flip__back"><strong>Hoàn thành, đạt được</strong><em>She accomplished her goal.</em></div>
+                  </div>
+                </div>
+                <div class="flip" tabindex="0" role="button" aria-label="Lật thẻ từ vựng">
+                  <div class="flip__inner">
+                    <div class="flip__face flip__front"><span class="flip__word">Reluctant</span><span class="flip__type">Adjective</span></div>
+                    <div class="flip__face flip__back"><strong>Miễn cưỡng, do dự</strong><em>He was reluctant to leave.</em></div>
+                  </div>
+                </div>
+                <div class="flip" tabindex="0" role="button" aria-label="Lật thẻ từ vựng">
+                  <div class="flip__inner">
+                    <div class="flip__face flip__front"><span class="flip__word">Thorough</span><span class="flip__type">Adjective</span></div>
+                    <div class="flip__face flip__back"><strong>Kỹ lưỡng, toàn diện</strong><em>A thorough review.</em></div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="study__title">Thử sức 1 câu</h4>
+              <div class="quiz">
+                <p class="quiz__q">She was ___ to admit her mistake, so she stayed silent.</p>
+                <div class="quiz__opts">
+                  <button type="button" class="opt">A. eager</button>
+                  <button type="button" class="opt" data-correct>B. reluctant</button>
+                  <button type="button" class="opt">C. glad</button>
+                  <button type="button" class="opt">D. ready</button>
+                </div>
+                <p class="quiz__fb" aria-live="polite"></p>
+                <button type="button" class="quiz__reset" hidden>Làm lại</button>
+                <span class="quiz__ok" hidden>Đúng rồi! "reluctant" nghĩa là miễn cưỡng, do dự, hợp với việc im lặng.</span>
+                <span class="quiz__no" hidden>Chưa đúng. Đáp án là B. reluctant (miễn cưỡng, do dự).</span>
+              </div>
+
+              <h4 class="study__title">Mẹo ôn tập nhanh</h4>
+              <ul class="tips">
+                <li style="--i:0">Làm quen giao diện thi trên máy tính bằng bài thi thử.</li>
+                <li style="--i:1">Luyện nói và viết thường xuyên, ghi âm giọng của mình để tự nghe lại.</li>
+                <li style="--i:2">Đọc và nghe tiếng Anh mỗi ngày để mở rộng vốn từ.</li>
+                <li style="--i:3">Quản lý thời gian, không dừng quá lâu ở một câu.</li>
+              </ul>
+
+              <a href="#dang-ky" class="btn btn--full study__cta">Nhận tài liệu luyện DET</a>
+            </div>
+          </article>
+
+          <!-- ============ CỘT TOEIC ============ -->
+          <article class="study__col study__col--toeic">
+            <div class="study__head">
+              <div class="study__icon">💼</div>
+              <div>
+                <h3>Góc học TOEIC</h3>
+                <p>Bài thi Nghe – Đọc và Nói - Viết <br>Tập trung tiếng Anh công sở</br></p> 
+              </div>
+            </div>
+
+            <div class="study__body">
+              <div class="chips">
+                <div class="chip"><b><span class="count" data-target="990">990</span></b><small>điểm tối đa</small></div>
+                <div class="chip"><b><span class="count" data-target="200">200</span></b><small>câu hỏi</small></div>
+                <div class="chip"><b><span class="count" data-target="7">7</span></b><small>Part</small></div>
+              </div>
+
+              <h4 class="study__title">Từ vựng hôm nay <em>(bấm để lật thẻ)</em></h4>
+              <div class="flips">
+                <div class="flip" tabindex="0" role="button" aria-label="Lật thẻ từ vựng">
+                  <div class="flip__inner">
+                    <div class="flip__face flip__front"><span class="flip__word">Complimentary</span><span class="flip__type">Adjective</span></div>
+                    <div class="flip__face flip__back"><strong>Miễn phí</strong><em>This is a complimentary refreshment.</em></div>
+                  </div>
+                </div>
+                <div class="flip" tabindex="0" role="button" aria-label="Lật thẻ từ vựng">
+                  <div class="flip__inner">
+                    <div class="flip__face flip__front"><span class="flip__word">Agenda</span><span class="flip__type">Noun</span></div>
+                    <div class="flip__face flip__back"><strong>Chương trình họp</strong><em>What's on the agenda?</em></div>
+                  </div>
+                </div>
+                <div class="flip" tabindex="0" role="button" aria-label="Lật thẻ từ vựng">
+                  <div class="flip__inner">
+                    <div class="flip__face flip__front"><span class="flip__word">Colleague</span><span class="flip__type">Noun</span></div>
+                    <div class="flip__face flip__back"><strong>Đồng nghiệp</strong><em>She asked a colleague.</em></div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="study__title">Thử sức 1 câu</h4>
+              <div class="quiz">
+                <p class="quiz__q">All reports must be submitted ___ Friday at 5 p.m.</p>
+                <div class="quiz__opts">
+                  <button type="button" class="opt" data-correct>A. by</button>
+                  <button type="button" class="opt">B. since</button>
+                  <button type="button" class="opt">C. during</button>
+                  <button type="button" class="opt">D. among</button>
+                </div>
+                <p class="quiz__fb" aria-live="polite"></p>
+                <button type="button" class="quiz__reset" hidden>Làm lại</button>
+                <span class="quiz__ok" hidden>Đúng rồi! "by + mốc thời gian" nghĩa là chậm nhất vào lúc đó.</span>
+                <span class="quiz__no" hidden>Chưa đúng. Đáp án là A. by (chậm nhất vào thứ Sáu lúc 5 giờ chiều).</span>
+              </div>
+
+              <h4 class="study__title">Mẹo ôn tập nhanh</h4>
+              <ul class="tips">
+                <li style="--i:0">Học từ vựng theo chủ đề công sở: hợp đồng, cuộc họp, công tác.</li>
+                <li style="--i:1">Luyện Part 5–6 mỗi ngày để tăng tốc phần ngữ pháp.</li>
+                <li style="--i:2">Nghe và nhại lại (shadowing) các bài Listening.</li>
+                <li style="--i:3">Làm trọn bộ đề trong thời gian thật, rồi phân tích từng câu sai.</li>
+              </ul>
+
+              <a href="#dang-ky" class="btn btn--purple btn--full study__cta">Nhận tài liệu luyện TOEIC</a>
+            </div>
+          </article>
+
+        </div>
+          </div>
+    </section>
+
+    <!-- ===== GIÁO VIÊN / ĐÁNH GIÁ (thay bằng nội dung thật) ===== -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section__head">
+          <h2>Đội ngũ giảng viên &amp; học viên nói gì</h2>
+        </div>
+        <div class="grid grid--3">
+          <div class="quote">
+            <p>“[Nhận xét thật của học viên 1]”</p>
+            <strong>— [Tên học viên], [Khóa học]</strong>
+          </div>
+          <div class="quote">
+            <p>“[Nhận xét thật của học viên 2]”</p>
+            <strong>— [Tên học viên], [Khóa học]</strong>
+          </div>
+          <div class="quote">
+            <p>“[Nhận xét thật của học viên 3]”</p>
+            <strong>— [Tên học viên], [Khóa học]</strong>
+          </div>
+        </div>
+
+        <!-- ===== CHỨNG CHỈ HỌC VIÊN: slide chạy ngang ===== -->
+        <div class="certs">
+          <h3 class="certs__title">Chứng chỉ học viên đã đạt</h3>
+
+          <div class="marquee">
+            <div class="marquee__track" id="certTrack">
+
+              <!--
+                CÁCH THÊM CHỨNG CHỈ THẬT:
+                1. Tạo thư mục "images" cùng cấp với index.html, bỏ ảnh chứng chỉ vào đó.
+                2. Thay khối <div class="cert__ph">...</div> bằng dòng:
+                   <img src="images/ten-anh.jpg" alt="Chứng chỉ DET của học viên A">
+                3. Sửa chữ trong <figcaption>.
+                4. Muốn thêm chứng chỉ: sao chép nguyên khối <figure class="cert">...</figure>.
+                (Không cần tự nhân đôi, script.js sẽ tự làm để slide chạy liền mạch.)
+              -->
+
+              <figure class="cert">
+                <div class="cert__frame">
+                  <img src="img/img-1.jpg" alt="Chứng chỉ DET của học viên A"> 
+                </div>
+                <figcaption>DET [điểm] · [Tên học viên]</figcaption>
+              </figure>
+
+              <figure class="cert">
+                <div class="cert__frame">
+                  <div class="cert__ph">Ảnh chứng chỉ<br>TOEIC</div>
+                </div>
+                <figcaption>TOEIC [điểm] · [Tên học viên]</figcaption>
+              </figure>
+
+              <figure class="cert">
+                <div class="cert__frame">
+                  <div class="cert__ph">Ảnh chứng chỉ<br>DET</div>
+                </div>
+                <figcaption>DET [điểm] · [Tên học viên]</figcaption>
+              </figure>
+
+              <figure class="cert">
+                <div class="cert__frame">
+                  <div class="cert__ph">Ảnh chứng chỉ<br>TOEIC</div>
+                </div>
+                <figcaption>TOEIC [điểm] · [Tên học viên]</figcaption>
+              </figure>
+
+              <figure class="cert">
+                <div class="cert__frame">
+                  <div class="cert__ph">Ảnh chứng chỉ<br>DET</div>
+                </div>
+                <figcaption>DET [điểm] · [Tên học viên]</figcaption>
+              </figure>
+
+              <figure class="cert">
+                <div class="cert__frame">
+                  <div class="cert__ph">Ảnh chứng chỉ<br>TOEIC</div>
+                </div>
+                <figcaption>TOEIC [điểm] · [Tên học viên]</figcaption>
+              </figure>
+
+            </div>
+          </div>
+          <p class="certs__hint">Rê chuột vào để tạm dừng. Chỉ đăng chứng chỉ khi học viên đồng ý và che thông tin cá nhân nhạy cảm (số CCCD, mã số thí sinh).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HỎI ĐÁP ===== -->
+    <section class="section" id="hoi-dap">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <h2>Câu hỏi thường gặp</h2>
+        </div>
+        <details class="faq">
+          <summary>Tôi chưa biết trình độ của mình thì nên học khóa nào?</summary>
+          <p>Bạn có thể đăng ký làm bài kiểm tra đầu vào miễn phí. Chúng tôi sẽ tư vấn khóa học phù hợp.</p>
+        </details>
+        <details class="faq">
+          <summary>Học online như thế nào?</summary>
+          <p>[Mô tả cách học: video bài giảng, buổi live, bài tập, chấm bài…]</p>
+        </details>
+        <details class="faq">
+          <summary>Học phí và hình thức thanh toán?</summary>
+          <p>[Điền học phí và các hình thức thanh toán: chuyển khoản, QR…]</p>
+        </details>
+        <details class="faq">
+          <summary>Có chính sách hoàn tiền không?</summary>
+          <p>[Điền chính sách hoàn tiền của bạn]</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== FORM ĐĂNG KÝ ===== -->
+    <section class="cta" id="dang-ky">
+      <div class="container cta__inner">
+        <div class="cta__text">
+          <h2>Đăng ký nhận tư vấn miễn phí</h2>
+          <p>Để lại thông tin, chúng tôi sẽ liên hệ để tư vấn lộ trình phù hợp cho bạn.</p>
+        </div>
+        <!-- Lưu ý: form này chỉ là giao diện. Cần gắn dịch vụ nhận dữ liệu (Google Forms, Formspree…) để hoạt động -->
+        <form class="form" action="#" method="post">
+          <label>Họ và tên
+            <input type="text" name="ten" placeholder="Nguyễn Văn A" required>
+          </label>
+          <label>Số điện thoại / Zalo
+            <input type="tel" name="sdt" placeholder="09xx xxx xxx" required>
+          </label>
+          <label>Khóa học quan tâm
+            <select name="khoa">
+              <option>DET</option>
+              <option>TOEIC</option>
+              <option>Giao tiếp</option>
+              <option>Chưa biết, cần tư vấn</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--full">Gửi thông tin</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== CHÂN TRANG ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="logo logo--light">TÊN<span>THƯƠNG HIỆU</span></div>
+        <p>Luyện thi DET, TOEIC và tiếng Anh giao tiếp online.</p>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Điện thoại/Zalo: [Số điện thoại]</p>
+        <p>Email: [Email]</p>
+        <p>Địa chỉ: [Địa chỉ]</p>
+      </div>
+      <div>
+          <h4>Liên kết</h4>
+          <p><a href="det.html">Khóa DET</a></p>
+          <p><a href="toeic.html">Khóa TOEIC</a></p>
+          <p><a href="giao-tiep.html">Khóa Giao tiếp</a></p>
+          <p><a href="gioi-thieu.html">Giới thiệu</a></p>
+          <p><a href="lien-he.html">Liên hệ</a></p>
+          <p><a href="#hoi-dap">Hỏi đáp</a></p>
+      </div>
+    </div>
+    <div class="container footer__note">
+      <p>DET là nhãn hiệu của Duolingo, TOEIC là nhãn hiệu của ETS. Website này là đơn vị đào tạo độc lập, không phải đối tác chính thức của các tổ chức trên.</p>
+      <p>© 2026 TÊN THƯƠNG HIỆU. Bảo lưu mọi quyền.</p>
+    </div>
+  </footer>
+
+  <!-- Nút quay lại đầu trang -->
+  <a href="#top" class="to-top" id="toTop" aria-label="Lên đầu trang">↑</a>
+
+  <!-- File JavaScript tạo hiệu ứng khi cuộn -->
+  <script src="script.js"></script>
+
+</body>
+</html>

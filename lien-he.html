@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ | TÊN THƯƠNG HIỆU</title>
+  <meta name="description" content="Liên hệ để được tư vấn khóa học DET, TOEIC và tiếng Anh giao tiếp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">TÊN<span>THƯƠNG HIỆU</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="det.html">DET</a>
+        <a href="toeic.html">TOEIC</a>
+        <a href="giao-tiep.html">Giao tiếp</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lien-he.html" class="active">Liên hệ</a>
+        <a href="#dang-ky" class="btn btn--small">Đăng ký tư vấn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="page-hero">
+      <div class="container page-hero__inner page-hero__inner--single">
+        <div class="page-hero__text">
+          <p class="breadcrumb"><a href="index.html">Trang chủ</a> › Liên hệ</p>
+          <h1>Liên hệ với <em>chúng tôi</em></h1>
+          <p>Để lại thông tin hoặc liên hệ trực tiếp, chúng tôi sẽ tư vấn khóa học phù hợp với mục tiêu của bạn.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dang-ky">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 class="story__title">Thông tin liên hệ</h2>
+          <div class="info">
+            <div class="info__icon">📞</div>
+            <div><small>Điện thoại / Zalo</small><strong>[Số điện thoại]</strong></div>
+          </div>
+          <div class="info">
+            <div class="info__icon">✉️</div>
+            <div><small>Email</small><strong>[Email]</strong></div>
+          </div>
+          <div class="info">
+            <div class="info__icon">📍</div>
+            <div><small>Địa chỉ</small><strong>[Địa chỉ]</strong></div>
+          </div>
+          <div class="info">
+            <div class="info__icon">🕒</div>
+            <div><small>Giờ làm việc</small><strong>[Ví dụ: Thứ 2 – Thứ 7, 8:00 – 21:00]</strong></div>
+          </div>
+          <div class="map">
+            <!--
+              CÁCH NHÚNG BẢN ĐỒ: mở Google Maps → tìm địa chỉ → Chia sẻ → Nhúng bản đồ → sao chép đoạn <iframe>
+              rồi dán thay cho dòng chữ bên dưới.
+            -->
+            <p>[Dán bản đồ Google Maps vào đây]</p>
+          </div>
+        </div>
+
+        <!-- Form này chỉ là giao diện. Cần gắn dịch vụ nhận dữ liệu (Google Forms, Formspree…) để hoạt động -->
+        <form class="form" action="#" method="post">
+          <h3 class="form__title">Gửi tin nhắn cho chúng tôi</h3>
+          <label>Họ và tên
+            <input type="text" name="ten" placeholder="Nguyễn Văn A" required>
+          </label>
+          <label>Số điện thoại / Zalo
+            <input type="tel" name="sdt" placeholder="09xx xxx xxx" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="ban@email.com">
+          </label>
+          <label>Khóa học quan tâm
+            <select name="khoa">
+              <option>DET</option>
+              <option>TOEIC</option>
+              <option>Giao tiếp</option>
+              <option selected>Chưa biết, cần tư vấn</option>
+            </select>
+          </label>
+          <label>Lời nhắn
+            <textarea name="loinhan" rows="4" placeholder="Bạn muốn hỏi điều gì?"></textarea>
+          </label>
+          <button type="submit" class="btn btn--full">Gửi thông tin</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="hoi-dap">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <h2>Giải đáp nhanh</h2>
+        </div>
+        <details class="faq">
+          <summary>Bao lâu thì tôi nhận được phản hồi?</summary>
+          <p>[Điền thời gian phản hồi dự kiến của bạn, ví dụ: trong vòng 24 giờ làm việc.]</p>
+        </details>
+        <details class="faq">
+          <summary>Tôi có thể học thử trước khi đăng ký không?</summary>
+          <p>[Điền chính sách học thử của bạn.]</p>
+        </details>
+        <details class="faq">
+          <summary>Tôi nên chọn khóa học nào?</summary>
+          <p>Bạn có thể gửi thông tin ở form trên. Chúng tôi sẽ kiểm tra trình độ và tư vấn khóa phù hợp với mục tiêu.</p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="logo logo--light">TÊN<span>THƯƠNG HIỆU</span></div>
+        <p>Luyện thi DET, TOEIC và tiếng Anh giao tiếp online.</p>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Điện thoại/Zalo: [Số điện thoại]</p>
+        <p>Email: [Email]</p>
+        <p>Địa chỉ: [Địa chỉ]</p>
+      </div>
+      <div>
+        <h4>Liên kết</h4>
+        <p><a href="det.html">Khóa DET</a></p>
+        <p><a href="toeic.html">Khóa TOEIC</a></p>
+        <p><a href="giao-tiep.html">Khóa Giao tiếp</a></p>
+        <p><a href="gioi-thieu.html">Giới thiệu</a></p>
+        <p><a href="lien-he.html">Liên hệ</a></p>
+      </div>
+    </div>
+    <div class="container footer__note">
+      <p>DET là nhãn hiệu của Duolingo, TOEIC là nhãn hiệu của ETS. Website này là đơn vị đào tạo độc lập, không phải đối tác chính thức của các tổ chức trên.</p>
+      <p>© 2026 TÊN THƯƠNG HIỆU. Bảo lưu mọi quyền.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Lên đầu trang">↑</a>
+  <script src="script.js"></script>
+</body>
+</html>
