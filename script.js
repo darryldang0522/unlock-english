@@ -25,11 +25,12 @@ const hieuUng = [
   { selector: '.story__text',        kieu: 'reveal--left' },
   { selector: '.story__box',         kieu: 'reveal--right' },
   { selector: '.person',             kieu: 'reveal--up' },
-  { selector: '.info',               kieu: 'reveal--left' },
   { selector: '.map',                kieu: 'reveal--up' },
   { selector: '.faq',                kieu: 'reveal--left' },
   { selector: '.cta__text',          kieu: 'reveal--left' },
-  { selector: '.form',               kieu: 'reveal--right' },
+  { selector: '.about__text > *',    kieu: 'reveal--left' },
+  { selector: '.about__photo',       kieu: 'reveal--right' },
+  { selector: '.stat',               kieu: 'reveal--zoom' },
 ];
 
 const phanTuCanTheoDoi = [];

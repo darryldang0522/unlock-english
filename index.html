@@ -51,7 +51,7 @@
             <div class="container hero__inner">
                 <div class="hero__text">
                     <span class="badge">Lộ trình cá nhân hóa • Cam kết đầu ra </span>
-                    <h1>Chinh phục <br><em>Duolingo English Test (DET)</em>, </br> <em>TOEIC</em> và <em> Tiếng Anh giao tiếp</em></h1>
+                    <h1>Chinh phục <br><em>Duolingo English Test (DET)</em>, <br> <em>TOEIC</em> và <em> Tiếng Anh giao tiếp</em></h1>
                     <p>Học đúng trọng tâm, luyện đề sát thực tế và được hướng dẫn từng bước để đạt mục tiêu của bạn: du học, xin việc, thăng tiến hay tự tin giao tiếp mỗi ngày.</p>
                     <div class="hero__actions">
                         <a href="#khoa-hoc" class="btn">Xem các khóa học</a>
@@ -83,7 +83,7 @@
                         <div class="about__frame">
                             <span>Ảnh giáo viên / đội ngũ</span>
                             <!-- Khi có ảnh: xóa dòng <span> ở trên và bỏ chú thích dòng dưới, sửa tên ảnh cho đúng -->
-                            <!-- <img src="images/ve-chung-toi.jpg" alt="Đội ngũ TÊN THƯƠNG HIỆU"> -->
+                            <!-- <img src="images/ve-chung-toi.jpg" alt="Đội ngũ Unlock English"> -->
                         </div>
                         <div class="about__badge">
                             <span class="about__badge-icon">🏅</span>
@@ -246,7 +246,7 @@
                             <div class="study__icon">🎓</div>
                             <div>
                                 <h3>Góc học DET</h3>
-                                <p>4 kỹ năng: Nghe – Nói - Đọc – Viết <br> Thi trên máy tính, câu hỏi thích ứng theo năng lực </br> </p>
+                                <p>4 kỹ năng: Nghe – Nói - Đọc – Viết <br> Thi trên máy tính, câu hỏi thích ứng theo năng lực</p>
                             </div>
                         </div>
 
@@ -312,7 +312,7 @@
                             <div class="study__icon">💼</div>
                             <div>
                                 <h3>Góc học TOEIC</h3>
-                                <p>Bài thi Nghe – Đọc và Nói - Viết <br>Tập trung tiếng Anh công sở</br></p>
+                                <p>Bài thi Nghe – Đọc và Nói - Viết <br>Tập trung tiếng Anh công sở</p>
                             </div>
                         </div>
 
@@ -488,18 +488,69 @@
             </div>
         </section>
 
+
+        <section class="cta" id="dang-ky">
+            <div class="container cta__inner">
+                <div class="cta__text">
+                    <h2>Đăng ký nhận tư vấn miễn phí</h2>
+                    <p>Để lại thông tin, chúng tôi sẽ liên hệ để tư vấn lộ trình phù hợp cho bạn.</p>
+                </div>
+                <!-- Form này chỉ là giao diện. Cần gắn dịch vụ nhận dữ liệu (Google Forms, Formspree…) để hoạt động -->
+                <form class="form" action="#" method="post">
+                    <label>
+                        Họ và tên
+                        <input type="text" name="ten" placeholder="Nguyễn Văn A" required>
+                    </label>
+                    <label>
+                        Số điện thoại / Zalo
+                        <input type="tel" name="sdt" placeholder="09xx xxx xxx" required
+                               pattern="^(0|\+84)[0-9 .\-]{8,13}$" title="Ví dụ: 0912 345 678">
+                    </label>
+                    <label>
+                        Khóa học quan tâm
+                        <select name="khoa">
+                            <option>DET</option>
+                            <option>TOEIC</option>
+                            <option>Giao tiếp</option>
+                            <option selected>Chưa biết, cần tư vấn</option>
+                        </select>
+                    </label>
+                    <label>
+                        Email (không bắt buộc)
+                        <input type="email" name="email" placeholder="ten@gmail.com">
+                    </label>
+                    <label>
+                        Mục tiêu của bạn
+                        <select name="muctieu">
+                            <option>Du học / xét tuyển</option>
+                            <option>Xin việc / thăng tiến</option>
+                            <option>Giao tiếp hằng ngày</option>
+                            <option>Khác</option>
+                        </select>
+                    </label>
+
+                    <label class="dong-y">
+                        <input type="checkbox" name="dongy" required>
+                        <span>Tôi đồng ý để Unlock English liên hệ tư vấn qua thông tin trên.</span>
+                    </label>
+                    <button type="submit" class="btn btn--full">Gửi thông tin</button>
+                    <p class="form__note">Thông tin của bạn chỉ dùng để tư vấn khóa học, chúng tôi không chia sẻ cho bên thứ ba.</p>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <!-- ===== CHÂN TRANG ===== -->
     <footer class="footer">
         <div class="container footer__inner">
             <div>
-                <div class="logo logo--light">TÊN<span>THƯƠNG HIỆU</span></div>
+                <div class="logo logo--light">UNLOCK<span>ENGLISH</span></div>
                 <p>Luyện thi DET, TOEIC và tiếng Anh giao tiếp online.</p>
             </div>
             <div>
                 <h4>Liên hệ</h4>
-                <p>Điện thoại/Zalo: [Số điện thoại]</p>
+                <p>Điện thoại/Zalo: <a href="tel:0769818188">0769 81 81 88</a></p>
                 <p>Email: [Email]</p>
                 <p>Địa chỉ: [Địa chỉ]</p>
             </div>
@@ -515,15 +566,16 @@
         </div>
         <div class="container footer__note">
             <p>DET là nhãn hiệu của Duolingo, TOEIC là nhãn hiệu của ETS. Website này là đơn vị đào tạo độc lập, không phải đối tác chính thức của các tổ chức trên.</p>
-            <p>© 2026 TÊN THƯƠNG HIỆU. Bảo lưu mọi quyền.</p>
+            <p>© 2026 Unlock English. Bảo lưu mọi quyền.</p>
         </div>
     </footer>
 
+    <!-- Nút quay lại đầu trang -->
     <!-- ===== KHU VỰC LIÊN LẠC NỔI (linh vật cú) ===== -->
     <div class="fab" id="lien-he-nhanh">
         <div class="fab-bub">Cần tư vấn <b>khóa học</b>? Chat với mình nhé!</div>
         <a class="fab-owl" href="https://zalo.me/0769818188" target="_blank" rel="noopener" aria-label="Linh vật cú tím - nhắn Zalo tư vấn">
-            <img src="img/linh-vat.png" alt="Linh vật cú tím cầm micro">
+            <img src="images/linh-vat.png" alt="Linh vật cú tím cầm micro">
         </a>
         <div class="fab-btns">
             <a class="fab-btn fab-call" href="tel:0769818188">
@@ -537,12 +589,12 @@
         </div>
     </div>
 
-    <!-- Nút quay lại đầu trang -->
     <a href="#top" class="to-top" id="toTop" aria-label="Lên đầu trang">↑</a>
 
     <!-- File JavaScript tạo hiệu ứng khi cuộn -->
     <script src="slide-nen.js"></script>
     <script src="script.js"></script>
+    <script src="form-gui.js"></script>
 
 </body>
 </html>

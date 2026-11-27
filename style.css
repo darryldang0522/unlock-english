@@ -1,5 +1,4 @@
 /* =========================================================
-/* =========================================================
    BIẾN MÀU: muốn đổi màu chủ đạo, chỉ cần sửa ở đây
    ========================================================= */
 :root {
@@ -152,7 +151,7 @@ ul { list-style: none; }
   margin-bottom: 20px;
 }
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 2.1rem;
   line-height: 1.5;
   font-weight: 800;
   margin-bottom: 20px;
@@ -410,6 +409,7 @@ ul { list-style: none; }
   color: var(--chu-nhat);
 }
 
+
 /* =========================================================
    KHỐI KÊU GỌI + FORM ĐĂNG KÝ
    ========================================================= */
@@ -462,7 +462,22 @@ ul { list-style: none; }
 .form select:focus { border-color: var(--tim); }
 .form .btn { background: var(--tim); border-color: var(--tim); }
 .form .btn:hover { background: var(--tim-dam); border-color: var(--tim-dam); }
-
+.form .dong-y {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--chu-nhat);
+}
+.form .dong-y input { width: auto; margin-top: 4px; }
+    .form .form__note {
+        margin-top: 16px;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        text-align: center;
+        color: var(--chu-nhat);
+    }
 /* =========================================================
    CHÂN TRANG
    ========================================================= */
@@ -1494,7 +1509,8 @@ ul { list-style: none; }
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: 40px;
-    align-items: start;
+    align-items: stretch;   /* hai cột cao bằng nhau */
+    text-align: left;
 }
 
 .info {
@@ -1530,30 +1546,23 @@ ul { list-style: none; }
 }
 
 .map {
-    margin-top: 20px;
-    min-height: 240px;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    padding: 20px;
-    color: var(--tim);
-    font-weight: 600;
-    background: var(--tim-nhat);
-    border: 2px dashed #cdb3da;
+    margin-top: 0;
+    min-height: 420px;
+    display: block;
+    padding: 0;
+    border: 0;
     border-radius: 16px;
+    box-shadow: var(--bong);
     overflow: hidden;
 }
 
     .map iframe {
+        display: block;
         width: 100%;
-        height: 320px;
+        height: 420px;
         border: 0;
     }
 
-.contact-grid .form {
-    box-shadow: var(--bong);
-    border: 1px solid #f0e8f4;
-}
 
 .form__title {
     color: var(--tim);
@@ -1583,6 +1592,7 @@ ul { list-style: none; }
     .story,
     .contact-grid {
         grid-template-columns: 1fr;
+        align-content:center;
     }
 
     .page-hero__card {
@@ -1626,4 +1636,456 @@ ul { list-style: none; }
     .page-hero {
         animation: none;
     }
+}
+/* =========================================================
+   VỀ CHÚNG TÔI (trang chủ)
+   ========================================================= */
+.about {
+    overflow: hidden;
+}
+/* chặn thanh cuộn ngang khi hiệu ứng trượt */
+.about__grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 56px;
+    align-items: center;
+}
+
+.about__eyebrow {
+    display: inline-block;
+    padding: 6px 16px;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--cam-dam);
+    background: #fff;
+    border-radius: 999px;
+    box-shadow: var(--bong);
+}
+
+.about__title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--tim);
+    margin-bottom: 16px;
+}
+
+    .about__title span {
+        color: var(--cam);
+    }
+
+.about__text p {
+    margin-bottom: 14px;
+    color: var(--chu-nhat);
+}
+
+.about__text .list {
+    margin: 18px 0 26px;
+}
+
+/* Khung ảnh có viền cam lệch phía sau */
+.about__photo {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    margin: 0 18px 18px 0;
+}
+
+    .about__photo::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        transform: translate(18px, 18px);
+        border: 3px solid var(--cam);
+        border-radius: 24px;
+    }
+
+.about__frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, var(--tim), #8A2BB5);
+    border-radius: 24px;
+    box-shadow: var(--bong);
+}
+
+    .about__frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Thẻ nhỏ nổi ở góc ảnh */
+.about__badge {
+    position: absolute;
+    left: -20px;
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(84, 3, 117, 0.25);
+}
+
+.about__badge-icon {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+    background: var(--cam-nhat);
+    border-radius: 12px;
+}
+
+.about__badge strong {
+    display: block;
+    color: var(--tim);
+    font-size: 0.95rem;
+}
+
+.about__badge small {
+    color: var(--chu-nhat);
+    font-size: 0.8rem;
+}
+
+/* =========================================================
+   KHU VỰC LIÊN LẠC NỔI + LINH VẬT CÚ (góc phải dưới)
+   ========================================================= */
+.fab {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 140;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+    .fab a {
+        text-decoration: none;
+    }
+
+/* Bong bóng lời chào */
+.fab-bub {
+    position: relative;
+    max-width: 170px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--chu);
+    background: #fff;
+    border: 1.5px solid #E4DBF7;
+    border-radius: 16px 16px 4px 16px;
+    box-shadow: 0 12px 28px rgba(37, 16, 79, 0.18);
+    animation: fabPop 0.6s 0.5s both;
+}
+
+    .fab-bub b {
+        color: var(--tim);
+    }
+
+/* Linh vật cú: đứng tự do (không có vòng tròn) */
+.fab-owl {
+    display: block;
+    width: 124px;
+    margin-right: 8px;
+    animation: fabBob 3.2s ease-in-out infinite;
+}
+
+    .fab-owl img {
+        display: block;
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 10px 14px rgba(37, 16, 79, 0.35));
+        transform-origin: 50% 100%;
+        transition: transform 0.25s;
+    }
+
+    .fab-owl:hover img {
+        transform: rotate(-4deg) scale(1.06);
+    }
+
+/* 2 nút liên lạc */
+.fab-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.fab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+    width: 170px;
+    padding: 0 20px 0 6px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    white-space: nowrap;
+    box-shadow: 0 10px 24px rgba(37, 16, 79, 0.28);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+    .fab-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 30px rgba(37, 16, 79, 0.34);
+    }
+
+    .fab-btn .ic {
+        width: 36px;
+        height: 36px;
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.22);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+    }
+
+.fab-call {
+    background: var(--cam);
+    color: #2A1200;
+    animation: fabRing 2.4s infinite;
+    color:white;
+}
+
+    .fab-call .ic {
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+
+.fab-fb {
+    background: #1877F2;
+    color: #fff;
+}
+
+.fab .short {
+    display: none;
+}
+
+@keyframes fabBob {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes fabPop {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fabRing {
+    0% {
+        box-shadow: 0 10px 24px rgba(37, 16, 79, 0.28), 0 0 0 0 rgba(255, 112, 0, 0.55);
+    }
+
+    70%, 100% {
+        box-shadow: 0 10px 24px rgba(37, 16, 79, 0.28), 0 0 0 16px rgba(255, 112, 0, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fab-owl, .fab-bub, .fab-call {
+        animation: none;
+    }
+}
+
+/* Nút "lên đầu trang" chuyển sang góc trái dưới để nhường chỗ cho khu vực liên lạc */
+.to-top {
+    right: auto;
+    left: 20px;
+}
+
+/* Điện thoại: 3 nút thành thanh ngang ở đáy màn hình, cú đứng phía trên bên phải */
+@media (max-width: 620px) {
+    .fab {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        align-items: stretch;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .fab-bub {
+        display: none;
+    }
+
+    .fab-owl {
+        width: 92px;
+        align-self: flex-end;
+        margin: 0 14px 2px 0;
+        pointer-events: auto;
+    }
+
+    .fab-btns {
+        pointer-events: auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: stretch;
+        padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+        background: #fff;
+        border-top: 1px solid #E4DBF7;
+        box-shadow: 0 -8px 24px rgba(37, 16, 79, 0.12);
+    }
+
+    .fab-btn {
+        flex: 1;
+        justify-content: center;
+        padding: 0 8px 0 5px;
+        gap: 6px;
+        height: 46px;
+        font-size: 0.85rem;
+        box-shadow: none;
+    }
+
+        .fab-btn .ic {
+            width: 32px;
+            height: 32px;
+        }
+
+    .fab .full {
+        display: none;
+    }
+
+    .fab .short {
+        display: inline;
+    }
+
+    body {
+        padding-bottom: 76px;
+    }
+
+    .to-top {
+        bottom: 96px;
+    }
+}
+/* =========================================================
+   SLIDE NỀN Ở BANNER TRANG CHỦ (chạy ẩn phía sau chữ)
+   ========================================================= */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__slides {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero__slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.4s ease; /* chuyển ảnh mờ dần */
+}
+
+    .hero__slide.is-active {
+        opacity: 1;
+        animation: heroZoom 10s ease-out forwards; /* phóng nhẹ rồi thu về */
+    }
+
+@keyframes heroZoom {
+    from {
+        transform: scale(1.12);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Lớp phủ tím: đậm bên trái để chữ dễ đọc, nhạt dần sang phải để lộ ảnh */
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(84, 3, 117, 0.95) 0%, rgba(84, 3, 117, 0.88) 42%, rgba(84, 3, 117, 0.30) 100%);
+}
+
+.hero__inner {
+    position: relative;
+    z-index: 2;
+    grid-template-columns: 1fr;
+}
+
+.hero__text {
+    max-width: 640px;
+}
+
+/* Banner không còn thẻ bên phải */
+.hero__card {
+    display: none !important;
+}
+
+/* Chấm tròn nhỏ chuyển ảnh ở góc phải dưới */
+.hero__dots {
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+    z-index: 3;
+    display: flex;
+    gap: 8px;
+}
+
+.hero__dot {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.45);
+    cursor: pointer;
+    transition: width 0.25s, background 0.25s;
+}
+
+    .hero__dot.is-active {
+        width: 24px;
+        background: var(--cam);
+    }
+
+/* Điện thoại / máy tính bảng: phủ đều để chữ luôn dễ đọc */
+@media (max-width: 960px) {
+    .hero__overlay {
+        background: rgba(84, 3, 117, 0.86);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__slide {
+        transition: none;
+    }
+
+        .hero__slide.is-active {
+            animation: none;
+        }
 }
